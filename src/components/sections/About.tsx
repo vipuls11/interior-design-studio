@@ -44,7 +44,7 @@ const About = () => {
         <Box sx={{ display: 'grid', gridTemplateColumns: { xs: '1fr', md: '1fr 1fr' }, gap: 6 }}>
           <Box>
             <Typography variant="h4" sx={{ mb: 3, fontWeight: 600 }}>
-              Our Philosophy
+              Our Philosophys
             </Typography>
             <Typography sx={{ lineHeight: 1.8, opacity: 0.9 }}>
             At §TUDIA 54®, we believe that great design is not just about aesthetics—it&apos;s about
