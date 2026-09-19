@@ -48,19 +48,18 @@ const StyleDiscovery = () => {
                   mb: 6,
                   lineHeight: 1.6
                 }}>
-                  We construct houses and design interiors in our signature style, 
-                  thoughtfully tailored to your lifestyle scenarios
+                 From thoughtful concepts to refined details. We design spaces around the way you live, work, and connect.
                 </Typography>
 
                 {/* STATISTIC */}
-                <Box sx={{ mb: 6 }}>
+                {/* <Box sx={{ mb: 6 }}>
                   <Typography variant="h4" sx={{ color: theme.palette.secondary.main, fontWeight: 500, mb: 0.5 }}>
                     98%
                   </Typography>
                   <Typography variant="body2" sx={{ color: 'rgba(255,255,255,0.6)', letterSpacing: '0.02em' }}>
                     of our customers recommend us
                   </Typography>
-                </Box>
+                </Box> */}
 
                 {/* BUTTON */}
                 <Button

@@ -5,45 +5,35 @@ import { motion } from 'framer-motion';
 
 const services = [
   {
-    title: "CUSTOMARY PREMIUM SERVICE",
+    title: "LIVING ROOM",
     desc: "Enjoy your usual lifestyle while we bring your vision to life",
     icon: "https://media.studia-54.com/icon_4_3_247421394d.webp",
   },
   {
-    title: "PERSONAL ARCHITECTURE & DESIGN EXPERT",
+    title: "DINNING ROOM",
     desc: "Your trusted advisor within MINDCRAFT STUDIO *",
     icon: "https://media.studia-54.com/icon_5_3_f6fe8b46f4.webp",
   },
   {
-    title: "DEDICATED APPROACH",
+    title: "BEDROOM",
     desc: "Enhanced service for key clients",
     icon: "https://media.studia-54.com/icon_6_3_bd48bd77d0.webp",
   },
   {
-    title: "BESPOKE DESIGN",
+    title: "MODULAR KITCHEN",
     desc: "The project will be designed exclusively for you based on individual sketches",
     icon: "https://media.studia-54.com/icon_7_3_b3876bc0b0_62d604a114.webp",
   },
   {
-    title: "TARIFFICATION",
+    title: "DINNING SPACE",
     desc: "We will offer you the most favorable terms for your project",
     icon: "https://media.studia-54.com/icon_8_3_0b9c41711b.webp",
   },
   {
-    title: "ROADMAP",
+    title: "OFFICE SPACE",
     desc: "A precise project management system with clear approval milestones",
     icon: "https://media.studia-54.com/icon_9_3_3498179ae7.webp",
-  },
-    {
-    title: "Reporting system",
-    desc: "You can monitor the construction process online",
-    icon: "https://media.studia-54.com/icon_10_3_3d025d8aa4.webp",
-  },
-  {
-    title: "Transparency",
-    desc: "Detailed timelines for your project",
-    icon: "https://media.studia-54.com/icon_11_3_a883cdf658.webp",
-  },
+  }
 ];
 
 const Partnership = () => {
@@ -60,7 +50,7 @@ const Partnership = () => {
             letterSpacing: '0.1em',
             mb: 1
           }}>
-            <Box component="span" sx={{ color: theme.palette.secondary.main }}>MINDCRAFT STUDIO</Box> — YOUR LIFE-LONG PARTNER
+            <Box component="span" sx={{ color: theme.palette.secondary.main }}>MINDCRAFT STUDIO</Box> — WHERE YOUR VISION TAKES SHAPE
           </Typography>
           <Typography variant="body1" sx={{ color: 'rgba(255,255,255,0.6)', fontWeight: 300 }}>
             An exceptional service experience tailored to discerning clients

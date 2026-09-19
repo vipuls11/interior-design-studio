@@ -15,15 +15,15 @@ const STAR_ICON_SRC = "https://media.studia-54.com/icon_3_3_6c2187c2c4.webp";
 
 // Custom Data structure to match the cards
 const statsData = [
-  { value: "1 200 m²", label: "average project area", icon: HOUSE_ICON_SRC },
+  { value: "Brainstorming", label: "Every great space begins with understanding you—your lifestyle, taste, and vision.", icon: CHAIR_ICON_SRC },
+  { value: "Concept Development", label: "Your ideas become the foundation of our concept.", icon: STAR_ICON_SRC },
   {
-    value: "98%",
-    label: "of customers recommend* us",
-    sub: "*We continuously measure client loyalty index (NPS)",
+    value: "Designning",
+    label: "We turn concepts into detailed visual experiences. With advanced design technology.",
+    // sub: "*We continuously measure client loyalty index (NPS)",
     icon: TROPHY_ICON_SRC,
   },
-  { value: "2 000 m²", label: "in-house manufacturing facility in Saint-Petersburg", icon: CHAIR_ICON_SRC },
-  { value: "10+ years", label: "of expertise in architecture, design, and construction", icon: STAR_ICON_SRC },
+  { value: "Execution", label: "We bring the design from the screen into reality.", icon: HOUSE_ICON_SRC },
 ];
 
 const GlobalProjects = () => {
@@ -50,7 +50,7 @@ const GlobalProjects = () => {
               <Typography variant="h3" sx={{
                 mb: 3, maxWidth: { xs: '100%', md: '520px' }, lineHeight: 1.2
               }}>
-                Completed projects in 32 countries
+                The Best Interior Design Start From Here 
               </Typography>
 
               <Typography variant="body1" sx={{
@@ -145,7 +145,7 @@ const GlobalProjects = () => {
                     }}>
                       {item.label}
                     </Typography>
-                    {item.sub && (
+                    {/* {item.sub && (
                       <Typography sx={{
                         fontSize: '9px',
                         color: 'rgba(255,255,255,0.3)',
@@ -153,7 +153,7 @@ const GlobalProjects = () => {
                       }}>
                         {item.sub}
                       </Typography>
-                    )}
+                    )} */}
                   </Box>
 
                   <Box
@@ -161,7 +161,7 @@ const GlobalProjects = () => {
                     src={item.icon}
                     alt={`${item.label} icon`}
                     sx={{
-                      width: '110px',
+                      width: '80px',
                       alignSelf: 'flex-end',
                       filter: 'drop-shadow(0 10px 20px rgba(0,0,0,0.5))'
                     }}

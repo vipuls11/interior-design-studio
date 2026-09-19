@@ -3,22 +3,22 @@ import React, { useEffect, useRef, useState } from "react";
 import { Box, Typography, Button, Stack, Container, Link } from "@mui/material";
 import { motion } from "framer-motion";
 import { MessageCircle } from "lucide-react";
+import {interiors} from "@/image";
 
 
 const Hero = () => {
-  const [isVideoReady, setIsVideoReady] = useState(false);
-  const [showVideo, setShowVideo] = useState(false);
-  const videoRef = useRef<HTMLVideoElement | null>(null);
-  const posterUrl =
-    "https://media.studia-54.com/mainpage_poster_desktop_d32d52173b.webp";
+  //const [isVideoReady, setIsVideoReady] = useState(false);
+  // const [showVideo, setShowVideo] = useState(false);
+  // const videoRef = useRef<HTMLVideoElement | null>(null);
+  // const posterUrl = commercial
 
-  useEffect(() => {
-    setShowVideo(true);
-  }, []);
+  // useEffect(() => {
+  //   setShowVideo(true);
+  // }, []);
 
-  const handleCanPlay = () => {
-    setIsVideoReady(true);
-  };
+  // const handleCanPlay = () => {
+  //   setIsVideoReady(true);
+  // };
 
   return (
     <Box
@@ -36,7 +36,7 @@ const Hero = () => {
       {/* 1. THE VIDEO / THUMBNAIL BACKGROUND */}
       <Box
         component="img"
-        src={posterUrl}
+        src={interiors.src}
         alt="Hero thumbnail"
         sx={{
           position: "absolute",
@@ -46,12 +46,12 @@ const Hero = () => {
           height: "100%",
           objectFit: "cover",
           zIndex: 0,
-          opacity: isVideoReady ? 0 : 1,
+          // opacity: isVideoReady ? 0 : 1,
           transition: "opacity 0.6s ease",
         }}
       />
 
-      {showVideo && (
+      {/* {showVideo && (
         <Box
           component="video"
           ref={videoRef}
@@ -79,7 +79,7 @@ const Hero = () => {
             type="video/mp4"
           />
         </Box>
-      )}
+      )} */}
 
       {/* 2. GRADIENT OVERLAY (For Text Readability) */}
       <Box
