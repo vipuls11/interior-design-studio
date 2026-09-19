@@ -24,7 +24,7 @@ const Portfolio = () => {
       image: '/api/placeholder/400/300',
     },
     {
-      title: 'Restaurant Interior',
+      title: 'RestRAJESH INERIORnt Interior',
       description: 'Dining space with ambient atmosphere',
       image: '/api/placeholder/400/300',
     },

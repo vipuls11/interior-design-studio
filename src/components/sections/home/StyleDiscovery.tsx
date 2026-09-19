@@ -37,7 +37,7 @@ const StyleDiscovery = () => {
                   mb: 4
                 }}>
                   DISCOVER <Box component="span" sx={{ color: theme.palette.secondary.main }}>THE</Box> <br />
-                  <Box component="span" sx={{ color: theme.palette.secondary.main }}>STUDIA 54 ®</Box> STYLE
+                  <Box component="span" sx={{ color: theme.palette.secondary.main }}>MINDCRAFT STUDIO</Box> STYLE
                 </Typography>
 
                 {/* DESCRIPTION */}
@@ -94,7 +94,7 @@ const StyleDiscovery = () => {
                 <Box
                   component="img"
                   src="https://media.studia-54.com/image_142_ddae6a0654.webp" // Add your black & white team photo here
-                  alt="Studia 54 Team"
+                  alt="MINDCRAFT STUDIO Team"
                   sx={{
                     width: '100%',
                     height: 'auto',

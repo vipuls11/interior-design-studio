@@ -5,6 +5,9 @@ import { Box, Typography, Container, Stack } from '@mui/material';
 import { motion, AnimatePresence } from 'framer-motion';
 import { MapPin } from 'lucide-react';
 import { useScrollTrigger } from '../../hooks/useScrollTrigger';
+import Image from 'next/image';
+import { mindcraftBGLOGO } from '@/image';
+
 
 
 const Navbar = () => {
@@ -12,7 +15,7 @@ const Navbar = () => {
 
   const navLinks = [
     { name: "ABOUT", path: "/about" },
-    { name: "PORTFOLIO", path: "/portfolio" },
+    // { name: "PORTFOLIO", path: "/portfolio" },
     { name: "CONTACTS", path: "/contacts" },
     { name: "SERVICES", path: "/services" }
   ];
@@ -40,12 +43,12 @@ const Navbar = () => {
         >
           {/* Language Switcher */}
           <Stack direction="row" spacing={2} sx={{ width: '150px' }}>
-            <Typography variant="caption" sx={{ opacity: 0.5, cursor: 'pointer', fontWeight: 600 }}>PY</Typography>
-            <Typography variant="caption" sx={{ fontWeight: 800, cursor: 'pointer', borderBottom: '1px solid white' }}>ENG</Typography>
+            {/* <Typography variant="caption" sx={{ opacity: 0.5, cursor: 'pointer', fontWeight: 600 }}>PY</Typography>
+            <Typography variant="caption" sx={{ fontWeight: 800, cursor: 'pointer', borderBottom: '1px solid white' }}>ENG</Typography> */}
           </Stack>
 
           {/* Logo */}
-          <Link href="/" style={{ textDecoration: 'none', color: 'inherit' }}>
+          {/* <Link href="/" style={{ textDecoration: 'none', color: 'inherit' }}>
             <Typography
               variant="h5"
               sx={{
@@ -56,9 +59,21 @@ const Navbar = () => {
                 cursor: 'pointer'
               }}
             >
-              §TUDIA 54®
+              MINDCRAFT STUDIO
             </Typography>
-          </Link>
+          </Link> */}
+ <Link href="/" style={{ textDecoration: 'none'}}>
+  <Image
+    src={mindcraftBGLOGO}
+    alt="Mindcraft Studio"
+    width={150}
+    style={{
+      objectFit: 'contain',
+      cursor: 'pointer',
+    }}
+    priority
+  />
+</Link>         
 
           {/* Contact Info */}
           <Stack direction="row" spacing={1} sx={{ width: '150px', alignItems: 'center', justifyContent: 'flex-end' }}>

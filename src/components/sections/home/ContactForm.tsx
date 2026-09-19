@@ -56,7 +56,7 @@ const ContactForm = () => {
               <Box
                 component="img"
                 src="https://media.studia-54.com/Form_main_eng_9f0e86aef6.webp" // Replace with your B&W photo
-                alt="Studia 54 CEOs"
+                alt="MINDCRAFT STUDIO CEOs"
                 sx={{
                   width: '100%',
                   height: '100%',
@@ -71,7 +71,7 @@ const ContactForm = () => {
               <Box sx={{ position: 'absolute', bottom: 40, left: 40, zIndex: 2 }}>
                 <Typography variant="caption" sx={{ color: '#d48d3b', fontWeight: 600, letterSpacing: '0.1em' }}>
                   OLGA IVANOVA AND STANISLAV KLUEV - <br />
-                  CEO STUDIA 54
+                  CEO MINDCRAFT STUDIO
                 </Typography>
               </Box>
             </Grid>
@@ -87,7 +87,7 @@ const ContactForm = () => {
                 <Typography variant="h4" sx={{ color: 'white', fontWeight: 300, mb: 2, letterSpacing: '0.05em' }}>
                   TURN YOUR DREAMS OF THE <br />
                   PERFECT HOME INTO REALITY <br />
-                  <Box component="span" sx={{ color: '#d48d3b' }}>WITH STUDIA 54 ®</Box>
+                  <Box component="span" sx={{ color: '#d48d3b' }}>WITH MINDCRAFT STUDIO</Box>
                 </Typography>
 
                 <Typography variant="body2" sx={{ color: 'rgba(255,255,255,0.6)', mb: 4, maxWidth: '450px', lineHeight: 1.6 }}>

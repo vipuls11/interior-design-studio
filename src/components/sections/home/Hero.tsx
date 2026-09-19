@@ -3,6 +3,7 @@ import React, { useEffect, useRef, useState } from 'react';
 import { Box, Typography, Button, Stack, Container } from '@mui/material';
 import { motion } from 'framer-motion';
 import { MessageCircle } from 'lucide-react';
+import Link from 'next/link';
 
 const Hero = () => {
   const [isVideoReady, setIsVideoReady] = useState(false);
@@ -99,14 +100,14 @@ const Hero = () => {
           <Typography
             variant="h2"
             sx={{
-              fontWeight: 300,
+              fontWeight: 500,
               color: 'white',
               letterSpacing: '0.1em',
               mb: 1,
-              fontSize: { xs: '2.5rem', md: '4rem' }
+              fontSize: { xs: '2.5rem', md: '2.5rem' }
             }}
           >
-            STUDIA 54
+            Welcome to Your Dream Space
           </Typography>
           
           <Typography
@@ -121,14 +122,15 @@ const Hero = () => {
             }}
           >
             <Box component="span" sx={{ color: '#d48d3b', fontWeight: 600 }}>
-              Leading International Bureau
-            </Box>{' '}
-            for Premium Architectural and Interior Design
+              We Do Not Just Decorate Interiors...
+            </Box> <br/>
+            We create a Feeling of Being at Home.
           </Typography>
 
-          <Button
+          <Link
+           href="/contacts"
             variant="contained"
-            sx={{
+            style={{
               backgroundColor: '#d48d3b',
               color: 'white',
               padding: '12px 40px',
@@ -141,13 +143,14 @@ const Hero = () => {
             }}
           >
             Discuss Your Project
-          </Button>
+          </Link>
         </motion.div>
       </Container>
 
       {/* 4. BOTTOM RIGHT FLOATING ACTION */}
-      <Box
-        sx={{
+      <Link
+       href="/contacts"
+        style={{
           position: 'absolute',
           bottom: '40px',
           right: '40px',
@@ -170,11 +173,11 @@ const Hero = () => {
           }}
         >
           <MessageCircle color="white" size={20} />
-          <Typography variant="body2" sx={{ color: 'white', fontWeight: 500 }}>
+          <Typography variant="body1" sx={{ color: 'white', fontWeight: 500 }}>
             Contact us
           </Typography>
         </Stack>
-      </Box>
+      </Link>
     </Box>
   );
 };

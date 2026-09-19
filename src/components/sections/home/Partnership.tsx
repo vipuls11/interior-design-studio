@@ -11,7 +11,7 @@ const services = [
   },
   {
     title: "PERSONAL ARCHITECTURE & DESIGN EXPERT",
-    desc: "Your trusted advisor within Studia 54 *",
+    desc: "Your trusted advisor within MINDCRAFT STUDIO *",
     icon: "https://media.studia-54.com/icon_5_3_f6fe8b46f4.webp",
   },
   {
@@ -60,7 +60,7 @@ const Partnership = () => {
             letterSpacing: '0.1em',
             mb: 1
           }}>
-            <Box component="span" sx={{ color: theme.palette.secondary.main }}>STUDIA 54 ®</Box> — YOUR LIFE-LONG PARTNER
+            <Box component="span" sx={{ color: theme.palette.secondary.main }}>MINDCRAFT STUDIO</Box> — YOUR LIFE-LONG PARTNER
           </Typography>
           <Typography variant="body1" sx={{ color: 'rgba(255,255,255,0.6)', fontWeight: 300 }}>
             An exceptional service experience tailored to discerning clients

@@ -118,9 +118,9 @@ const Footer = () => {
 
           {/* COLUMN 5: Branding & Socials */}
           <Grid size={{ xs: 12 ,sm: 6 ,md: 2.4 }}>
-            <Typography variant="h4" sx={{ letterSpacing: '0.2em', fontWeight: 300, mb: 1 }}>STUDIA 54 ®</Typography>
+            <Typography variant="h4" sx={{ letterSpacing: '0.2em', fontWeight: 300, mb: 1 }}>MINDCRAFT STUDIO</Typography>
             <Typography sx={{ fontSize: '10px', color: 'rgba(255,255,255,0.4)', mb: 4 }}>
-              © 2013 — 2026 Studia-54 Interior Design and Engineering
+              © 2013 — 2026 MINDCRAFT STUDIO Interior Design and Engineering
             </Typography>
             
             <Typography variant="caption" sx={{ fontWeight: 700, display: 'block', mb: 2 }}>WE'RE ON SOCIAL MEDIA</Typography>
@@ -165,7 +165,7 @@ const Footer = () => {
         </Stack>
 
   <Typography sx={{ color: 'rgba(255,255,255,0.4)', fontSize: '11px' }}>
-    LLC Studia 54 © All rights reserved
+    LLC MINDCRAFT STUDIO © All rights reserved
   </Typography>
 </Stack>
       </Container>

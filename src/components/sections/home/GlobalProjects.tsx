@@ -57,7 +57,7 @@ const GlobalProjects = () => {
                 color: 'rgba(255,255,255,0.6)',
                 mb: 5, maxWidth: { xs: '100%', md: '450px' }, lineHeight: 1.6
               }}>
-                We have showcasing projects in the distinctive Studia 54 * style around the world{' '}
+                We have showcasing projects in the distinctive MINDCRAFT STUDIO * style around the world{' '}
                 <Box component="span" sx={{ color: theme.palette.secondary.main }}>
                   the most extensive portfolio
                 </Box>
