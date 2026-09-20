@@ -63,9 +63,9 @@ const Contacts = () => {
                     Address
                   </Typography>
                   <Typography sx={{ opacity: 0.8 }}>
-                    123 Design Street<br />
-                    Creative District<br />
-                    New York, NY 10001
+                    Room no 5, jansewa ambewadi, RK Singh Marg,<br />
+                    Mogra Village, Mogra Pada, Natwar Nagar,<br />
+                    Andheri East, Mumbai, Maharashtra 400069
                   </Typography>
                 </Box>
               </Box>
@@ -77,7 +77,7 @@ const Contacts = () => {
                     Phone
                   </Typography>
                   <Typography sx={{ opacity: 0.8 }}>
-                    +1 (555) 123-4567
+                    080800 81996
                   </Typography>
                 </Box>
               </Box>
@@ -89,7 +89,7 @@ const Contacts = () => {
                     Email
                   </Typography>
                   <Typography sx={{ opacity: 0.8 }}>
-                    hello@studia54.com
+                    hello@mindcraftstudio.net
                   </Typography>
                 </Box>
               </Box>
