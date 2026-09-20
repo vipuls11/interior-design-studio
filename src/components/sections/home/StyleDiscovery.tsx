@@ -2,6 +2,7 @@
 import React from 'react';
 import { Box, Container, Typography, Grid, Button, useTheme } from '@mui/material';
 import { motion } from 'framer-motion';
+import { LivingROOM } from "@/image";
 
 const StyleDiscovery = () => {
   const theme = useTheme();
@@ -92,7 +93,7 @@ const StyleDiscovery = () => {
               >
                 <Box
                   component="img"
-                  src="https://media.studia-54.com/image_142_ddae6a0654.webp" // Add your black & white team photo here
+                  src={LivingROOM.src}// Add your black & white team photo here
                   alt="MINDCRAFT STUDIO Team"
                   sx={{
                     width: '100%',

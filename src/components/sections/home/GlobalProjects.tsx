@@ -3,27 +3,28 @@ import React from 'react';
 import { Box, Container, Typography, Button, useTheme } from '@mui/material';
 import { motion } from 'framer-motion';
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward'; // Lucide substitute
+import {brainSTORMING, conceptDev, design, execution} from "@/image";
 
 // PLACEHOLDERS FOR YOUR ASSETS
 // Before running, add these specific assets to your public/assets/ folder
 // These should be high-quality PNGs with specific 3D glass and bronze lighting effects
 const GLOBE_IMG_SRC = "https://studia-54.com/planet.webp";
-const HOUSE_ICON_SRC = "https://media.studia-54.com/icon_0_3_8d9d85740a.webp";
-const TROPHY_ICON_SRC = "https://media.studia-54.com/icon_1_3_6973aac7ba.webp";
-const CHAIR_ICON_SRC = "https://media.studia-54.com/icon_2_3_5ac879a3f2.webp";
-const STAR_ICON_SRC = "https://media.studia-54.com/icon_3_3_6c2187c2c4.webp";
+const  EXECUTION= execution;
+const DESIGN = design;
+const BRAIN_STORMING = brainSTORMING;
+const CONCEPT_DEV = conceptDev;
 
 // Custom Data structure to match the cards
 const statsData = [
-  { value: "Brainstorming", label: "Every great space begins with understanding you—your lifestyle, taste, and vision.", icon: CHAIR_ICON_SRC },
-  { value: "Concept Development", label: "Your ideas become the foundation of our concept.", icon: STAR_ICON_SRC },
+  { value: "Brainstorming", label: "Every great space begins with understanding you—your lifestyle, taste, and vision.", icon: BRAIN_STORMING },
+  { value: "Concept Development", label: "Your ideas become the foundation of our concept.", icon: CONCEPT_DEV },
   {
     value: "Designning",
     label: "We turn concepts into detailed visual experiences. With advanced design technology.",
     // sub: "*We continuously measure client loyalty index (NPS)",
-    icon: TROPHY_ICON_SRC,
+    icon: DESIGN,
   },
-  { value: "Execution", label: "We bring the design from the screen into reality.", icon: HOUSE_ICON_SRC },
+  { value: "Execution", label: "We bring the design from the screen into reality.", icon: EXECUTION },
 ];
 
 const GlobalProjects = () => {
@@ -140,7 +141,7 @@ const GlobalProjects = () => {
                     <Typography variant="body2" sx={{
                       color: 'rgba(255,255,255,0.5)',
                       textTransform: 'uppercase',
-                      letterSpacing: '0.05em', fontSize: '11px',
+                      letterSpacing: '0.05em', fontSize: '12px',
                       lineHeight: 1.5
                     }}>
                       {item.label}
@@ -158,10 +159,10 @@ const GlobalProjects = () => {
 
                   <Box
                     component="img"
-                    src={item.icon}
+                    src={item.icon.src}
                     alt={`${item.label} icon`}
                     sx={{
-                      width: '80px',
+                      width: '100px',
                       alignSelf: 'flex-end',
                       filter: 'drop-shadow(0 10px 20px rgba(0,0,0,0.5))'
                     }}

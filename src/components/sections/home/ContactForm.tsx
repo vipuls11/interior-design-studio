@@ -14,7 +14,7 @@ import {
   alpha
 } from '@mui/material';
 import { motion } from 'framer-motion';
-
+import { commercial } from "@/image";
 const ContactForm = () => {
   const theme = useTheme();
 
@@ -55,7 +55,7 @@ const ContactForm = () => {
               {/* CEO Photo */}
               <Box
                 component="img"
-                src="https://media.studia-54.com/Form_main_eng_9f0e86aef6.webp" // Replace with your B&W photo
+                src={commercial.src} // Replace with your B&W photo
                 alt="MINDCRAFT STUDIO CEOs"
                 sx={{
                   width: '100%',
@@ -68,12 +68,12 @@ const ContactForm = () => {
               />
 
               {/* CEO Names Overlay */}
-              <Box sx={{ position: 'absolute', bottom: 40, left: 40, zIndex: 2 }}>
+              {/* <Box sx={{ position: 'absolute', bottom: 40, left: 40, zIndex: 2 }}>
                 <Typography variant="caption" sx={{ color: '#d48d3b', fontWeight: 600, letterSpacing: '0.1em' }}>
                   OLGA IVANOVA AND STANISLAV KLUEV - <br />
                   CEO MINDCRAFT STUDIO
                 </Typography>
-              </Box>
+              </Box> */}
             </Grid>
 
             {/* RIGHT SIDE: THE FORM */}
