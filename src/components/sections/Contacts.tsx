@@ -16,19 +16,23 @@ const Contacts = () => {
         minHeight: '100vh',
         backgroundColor: '#000',
         color: 'white',
-        paddingTop: '130px', // Account for fixed navbar
+        px: { xs: 2, sm: 3 },
+        pt: { xs: '100px', md: '130px' },
+        pb: { xs: 6, md: 10 },
       }}
     >
       <Container maxWidth="lg">
-        <Box sx={{ textAlign: 'center', mb: 8 }}>
+        <Box sx={{ textAlign: 'center', mb: { xs: 5, md: 8 } }}>
           <Typography
             variant="h2"
             sx={{
               fontFamily: 'serif',
               fontWeight: 300,
-              letterSpacing: '0.2em',
+              letterSpacing: { xs: '0.08em', md: '0.2em' },
               textTransform: 'uppercase',
-              mb: 4,
+              mb: 3,
+              fontSize: { xs: '2.2rem', sm: '3rem', md: '4rem' },
+              lineHeight: 1.1,
             }}
           >
             Contact Us
@@ -41,6 +45,7 @@ const Contacts = () => {
               maxWidth: '600px',
               mx: 'auto',
               lineHeight: 1.6,
+              fontSize: { xs: '1.05rem', md: '1.5rem' },
             }}
           >
             Ready to transform your space? Get in touch with our team of expert designers.
@@ -63,9 +68,9 @@ const Contacts = () => {
                     Address
                   </Typography>
                   <Typography sx={{ opacity: 0.8 }}>
-                    123 Design Street<br />
-                    Creative District<br />
-                    New York, NY 10001
+                    Room no 5, jansewa ambewadi, RK Singh Marg,<br />
+                    Mogra Village, Mogra Pada, Natwar Nagar,<br />
+                    Andheri East, Mumbai, Maharashtra 400069
                   </Typography>
                 </Box>
               </Box>
@@ -77,7 +82,7 @@ const Contacts = () => {
                     Phone
                   </Typography>
                   <Typography sx={{ opacity: 0.8 }}>
-                    +1 (555) 123-4567
+                    080800 81996
                   </Typography>
                 </Box>
               </Box>
@@ -89,7 +94,7 @@ const Contacts = () => {
                     Email
                   </Typography>
                   <Typography sx={{ opacity: 0.8 }}>
-                    hello@studia54.com
+                    hello@mindcraftstudio.net
                   </Typography>
                 </Box>
               </Box>

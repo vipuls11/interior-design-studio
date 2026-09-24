@@ -2,6 +2,7 @@
 import React from 'react';
 import { Box, Container, Typography, Grid, Button, useTheme } from '@mui/material';
 import { motion } from 'framer-motion';
+import { LivingROOM } from "@/image";
 
 const StyleDiscovery = () => {
   const theme = useTheme();
@@ -37,7 +38,7 @@ const StyleDiscovery = () => {
                   mb: 4
                 }}>
                   DISCOVER <Box component="span" sx={{ color: theme.palette.secondary.main }}>THE</Box> <br />
-                  <Box component="span" sx={{ color: theme.palette.secondary.main }}>STUDIA 54 ®</Box> STYLE
+                  <Box component="span" sx={{ color: theme.palette.secondary.main }}>MINDCRAFT STUDIO</Box> STYLE
                 </Typography>
 
                 {/* DESCRIPTION */}
@@ -48,19 +49,18 @@ const StyleDiscovery = () => {
                   mb: 6,
                   lineHeight: 1.6
                 }}>
-                  We construct houses and design interiors in our signature style, 
-                  thoughtfully tailored to your lifestyle scenarios
+                 From thoughtful concepts to refined details. We design spaces around the way you live, work, and connect.
                 </Typography>
 
                 {/* STATISTIC */}
-                <Box sx={{ mb: 6 }}>
+                {/* <Box sx={{ mb: 6 }}>
                   <Typography variant="h4" sx={{ color: theme.palette.secondary.main, fontWeight: 500, mb: 0.5 }}>
                     98%
                   </Typography>
                   <Typography variant="body2" sx={{ color: 'rgba(255,255,255,0.6)', letterSpacing: '0.02em' }}>
                     of our customers recommend us
                   </Typography>
-                </Box>
+                </Box> */}
 
                 {/* BUTTON */}
                 <Button
@@ -93,8 +93,8 @@ const StyleDiscovery = () => {
               >
                 <Box
                   component="img"
-                  src="https://media.studia-54.com/image_142_ddae6a0654.webp" // Add your black & white team photo here
-                  alt="Studia 54 Team"
+                  src={LivingROOM.src}// Add your black & white team photo here
+                  alt="MINDCRAFT STUDIO Team"
                   sx={{
                     width: '100%',
                     height: 'auto',

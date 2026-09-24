@@ -3,7 +3,7 @@ import React from 'react';
 import { Box, Container, Typography, Stack, IconButton } from '@mui/material';
 import { motion } from 'framer-motion';
 import { Instagram, YouTube, Pinterest } from '@mui/icons-material';
-import { Counter } from '@/src/utils/Counter';
+import { Counter } from '@/utils/Counter';
 // Using a simple SVG for VK to match the design exactly
 const VKIcon = () => (
   <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
@@ -90,7 +90,7 @@ const SocialRecognition = () => {
           <Typography
             variant="h1"
             sx={{
-              color: '#d48d3b', // Studia 54 Gold
+              color: '#d48d3b', // MINDCRAFT STUDIO Gold
               fontWeight: 500,
               mb: 1,
               fontSize: { xs: '3rem', md: '5rem' },

@@ -1,14 +1,14 @@
 import { Box, Typography, Container, Button } from '@mui/material';
 import Link from 'next/link';
-import Hero from '../src/components/sections/home/Hero';
-import GlobalProjects from '../src/components/sections/home/GlobalProjects';
-import ProjectsGallery from '@/src/components/sections/home/ProjectsGallery';
-import Partnership from '@/src/components/sections/home/Partnership';
-import StyleDiscovery from '@/src/components/sections/home/StyleDiscovery';
-import SocialRecognition from '@/src/components/sections/home/SocialRecognition';
-import ClientLogos from '@/src/components/sections/home/ClientLogos';
-import ProcessSteps from '@/src/components/sections/home/ProcessSteps';
-import ContactForm from '@/src/components/sections/home/ContactForm';
+import Hero from '@/components/sections/home/Hero';
+import GlobalProjects from '@/components/sections/home/GlobalProjects';
+import ProjectsGallery from '@/components/sections/home/ProjectsGallery';
+import Partnership from '@/components/sections/home/Partnership';
+import StyleDiscovery from '@/components/sections/home/StyleDiscovery';
+import SocialRecognition from '@/components/sections/home/SocialRecognition';
+import ClientLogos from '@/components/sections/home/ClientLogos';
+import ProcessSteps from '@/components/sections/home/ProcessSteps';
+import ContactForm from '@/components/sections/home/ContactForm';
 
 export default function Home() {
   return (

@@ -3,27 +3,28 @@ import React from 'react';
 import { Box, Container, Typography, Button, useTheme } from '@mui/material';
 import { motion } from 'framer-motion';
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward'; // Lucide substitute
+import {brainSTORMING, conceptDev, design, execution} from "@/image";
 
 // PLACEHOLDERS FOR YOUR ASSETS
 // Before running, add these specific assets to your public/assets/ folder
 // These should be high-quality PNGs with specific 3D glass and bronze lighting effects
 const GLOBE_IMG_SRC = "https://studia-54.com/planet.webp";
-const HOUSE_ICON_SRC = "https://media.studia-54.com/icon_0_3_8d9d85740a.webp";
-const TROPHY_ICON_SRC = "https://media.studia-54.com/icon_1_3_6973aac7ba.webp";
-const CHAIR_ICON_SRC = "https://media.studia-54.com/icon_2_3_5ac879a3f2.webp";
-const STAR_ICON_SRC = "https://media.studia-54.com/icon_3_3_6c2187c2c4.webp";
+const  EXECUTION= execution;
+const DESIGN = design;
+const BRAIN_STORMING = brainSTORMING;
+const CONCEPT_DEV = conceptDev;
 
 // Custom Data structure to match the cards
 const statsData = [
-  { value: "1 200 m²", label: "average project area", icon: HOUSE_ICON_SRC },
+  { value: "Brainstorming", label: "Every great space begins with understanding you—your lifestyle, taste, and vision.", icon: BRAIN_STORMING },
+  { value: "Concept Development", label: "Your ideas become the foundation of our concept.", icon: CONCEPT_DEV },
   {
-    value: "98%",
-    label: "of customers recommend* us",
-    sub: "*We continuously measure client loyalty index (NPS)",
-    icon: TROPHY_ICON_SRC,
+    value: "Designning",
+    label: "We turn concepts into detailed visual experiences. With advanced design technology.",
+    // sub: "*We continuously measure client loyalty index (NPS)",
+    icon: DESIGN,
   },
-  { value: "2 000 m²", label: "in-house manufacturing facility in Saint-Petersburg", icon: CHAIR_ICON_SRC },
-  { value: "10+ years", label: "of expertise in architecture, design, and construction", icon: STAR_ICON_SRC },
+  { value: "Execution", label: "We bring the design from the screen into reality.", icon: EXECUTION },
 ];
 
 const GlobalProjects = () => {
@@ -50,14 +51,14 @@ const GlobalProjects = () => {
               <Typography variant="h3" sx={{
                 mb: 3, maxWidth: { xs: '100%', md: '520px' }, lineHeight: 1.2
               }}>
-                Completed projects in 32 countries
+                The Best Interior Design Start From Here 
               </Typography>
 
               <Typography variant="body1" sx={{
                 color: 'rgba(255,255,255,0.6)',
                 mb: 5, maxWidth: { xs: '100%', md: '450px' }, lineHeight: 1.6
               }}>
-                We have showcasing projects in the distinctive Studia 54 * style around the world{' '}
+                We have showcasing projects in the distinctive MINDCRAFT STUDIO * style around the world{' '}
                 <Box component="span" sx={{ color: theme.palette.secondary.main }}>
                   the most extensive portfolio
                 </Box>
@@ -140,12 +141,12 @@ const GlobalProjects = () => {
                     <Typography variant="body2" sx={{
                       color: 'rgba(255,255,255,0.5)',
                       textTransform: 'uppercase',
-                      letterSpacing: '0.05em', fontSize: '11px',
+                      letterSpacing: '0.05em', fontSize: '12px',
                       lineHeight: 1.5
                     }}>
                       {item.label}
                     </Typography>
-                    {item.sub && (
+                    {/* {item.sub && (
                       <Typography sx={{
                         fontSize: '9px',
                         color: 'rgba(255,255,255,0.3)',
@@ -153,15 +154,15 @@ const GlobalProjects = () => {
                       }}>
                         {item.sub}
                       </Typography>
-                    )}
+                    )} */}
                   </Box>
 
                   <Box
                     component="img"
-                    src={item.icon}
+                    src={item.icon.src}
                     alt={`${item.label} icon`}
                     sx={{
-                      width: '110px',
+                      width: '100px',
                       alignSelf: 'flex-end',
                       filter: 'drop-shadow(0 10px 20px rgba(0,0,0,0.5))'
                     }}
