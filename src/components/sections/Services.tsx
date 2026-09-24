@@ -1,3 +1,4 @@
+"use client"
 import React from 'react';
 import { Box, Typography, Container, Card, CardContent } from '@mui/material';
 import { Palette, Lightbulb, Ruler, Wrench } from 'lucide-react';
@@ -32,19 +33,23 @@ const Services = () => {
         minHeight: '100vh',
         backgroundColor: '#000',
         color: 'white',
-        paddingTop: '130px', // Account for fixed navbar
+        px: { xs: 2, sm: 3 },
+        pt: { xs: '100px', md: '130px' },
+        pb: { xs: 6, md: 10 },
       }}
     >
       <Container maxWidth="lg">
-        <Box sx={{ textAlign: 'center', mb: 8 }}>
+        <Box sx={{ textAlign: 'center', mb: { xs: 5, md: 8 } }}>
           <Typography
             variant="h2"
             sx={{
               fontFamily: 'serif',
               fontWeight: 300,
-              letterSpacing: '0.2em',
+              letterSpacing: { xs: '0.08em', md: '0.2em' },
               textTransform: 'uppercase',
-              mb: 4,
+              mb: 3,
+              fontSize: { xs: '2.2rem', sm: '3rem', md: '4rem' },
+              lineHeight: 1.1,
             }}
           >
             Our Services
@@ -57,6 +62,7 @@ const Services = () => {
               maxWidth: '700px',
               mx: 'auto',
               lineHeight: 1.6,
+              fontSize: { xs: '1.05rem', md: '1.5rem' },
             }}
           >
             From initial consultation to final implementation, we offer comprehensive interior design

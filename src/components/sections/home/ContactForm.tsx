@@ -14,7 +14,7 @@ import {
   alpha
 } from '@mui/material';
 import { motion } from 'framer-motion';
-
+import { commercial } from "@/image";
 const ContactForm = () => {
   const theme = useTheme();
 
@@ -28,7 +28,7 @@ const ContactForm = () => {
             borderRadius: '32px',
             border: '1px solid rgba(255,255,255,0.05)',
             overflow: 'hidden',
-            mx:4
+            mx: { xs: 0, md: 4 },
           }}
         >
           <Grid container >
@@ -41,12 +41,13 @@ const ContactForm = () => {
                   top: '50%',
                   left: '10%',
                   transform: 'translateY(-50%)',
-                  fontSize: '30rem',
+                  fontSize: { xs: '12rem', md: '30rem' },
                   fontWeight: 900,
                   color: 'rgba(255,255,255,0.03)',
                   zIndex: 0,
                   pointerEvents: 'none',
-                  lineHeight: 1
+                  lineHeight: 1,
+                  userSelect: 'none',
                 }}
               >
                 S54
@@ -55,8 +56,8 @@ const ContactForm = () => {
               {/* CEO Photo */}
               <Box
                 component="img"
-                src="https://media.studia-54.com/Form_main_eng_9f0e86aef6.webp" // Replace with your B&W photo
-                alt="Studia 54 CEOs"
+                src={commercial.src} // Replace with your B&W photo
+                alt="MINDCRAFT STUDIO CEOs"
                 sx={{
                   width: '100%',
                   height: '100%',
@@ -68,26 +69,36 @@ const ContactForm = () => {
               />
 
               {/* CEO Names Overlay */}
-              <Box sx={{ position: 'absolute', bottom: 40, left: 40, zIndex: 2 }}>
+              {/* <Box sx={{ position: 'absolute', bottom: 40, left: 40, zIndex: 2 }}>
                 <Typography variant="caption" sx={{ color: '#d48d3b', fontWeight: 600, letterSpacing: '0.1em' }}>
                   OLGA IVANOVA AND STANISLAV KLUEV - <br />
-                  CEO STUDIA 54
+                  CEO MINDCRAFT STUDIO
                 </Typography>
-              </Box>
+              </Box> */}
             </Grid>
 
             {/* RIGHT SIDE: THE FORM */}
-            <Grid size={{ xs: 12, md: 6 }} sx={{ p: { xs: 4, md: 8 }, display: 'flex', alignItems: 'center' }}>
+            <Grid size={{ xs: 12, md: 6 }} sx={{ p: { xs: 3, sm: 4, md: 8 }, display: 'flex', alignItems: 'center' }}>
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8 }}
                 viewport={{ once: true }}
               >
-                <Typography variant="h4" sx={{ color: 'white', fontWeight: 300, mb: 2, letterSpacing: '0.05em' }}>
+                <Typography
+                  variant="h4"
+                  sx={{
+                    color: 'white',
+                    fontWeight: 300,
+                    mb: 2,
+                    letterSpacing: '0.05em',
+                    fontSize: { xs: '1.8rem', sm: '2.3rem', md: '2.5rem' },
+                    lineHeight: 1.2,
+                  }}
+                >
                   TURN YOUR DREAMS OF THE <br />
                   PERFECT HOME INTO REALITY <br />
-                  <Box component="span" sx={{ color: '#d48d3b' }}>WITH STUDIA 54 ®</Box>
+                  <Box component="span" sx={{ color: '#d48d3b' }}>WITH MINDCRAFT STUDIO</Box>
                 </Typography>
 
                 <Typography variant="body2" sx={{ color: 'rgba(255,255,255,0.6)', mb: 4, maxWidth: '450px', lineHeight: 1.6 }}>
