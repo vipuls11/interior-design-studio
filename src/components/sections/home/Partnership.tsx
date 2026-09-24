@@ -41,19 +41,31 @@ const Partnership = () => {
   const theme = useTheme();
 
   return (
-    <Box sx={{ bgcolor: '#000', py: 15 }}>
+    <Box sx={{ bgcolor: '#000', py: { xs: 8, md: 15 }, px: { xs: 2, sm: 3 } }}>
       <Container maxWidth="xl">
         {/* SECTION HEADER */}
-        <Box sx={{ textAlign: 'center', mb: 10 }}>
-          <Typography variant="h4" sx={{ 
-            color: 'white', 
-            fontWeight: 400, 
-            letterSpacing: '0.1em',
-            mb: 1
-          }}>
+        <Box sx={{ textAlign: 'center', mb: { xs: 6, md: 10 } }}>
+          <Typography
+            variant="h4"
+            sx={{
+              color: 'white',
+              fontWeight: 400,
+              letterSpacing: { xs: '0.04em', md: '0.1em' },
+              mb: 1,
+              fontSize: { xs: '1.5rem', sm: '2rem', md: '2.5rem' },
+              lineHeight: 1.3,
+            }}
+          >
             <Box component="span" sx={{ color: theme.palette.secondary.main }}>MINDCRAFT STUDIO</Box> — WHERE YOUR VISION TAKES SHAPE
           </Typography>
-          <Typography variant="body1" sx={{ color: 'rgba(255,255,255,0.6)', fontWeight: 300 }}>
+          <Typography
+            variant="body1"
+            sx={{
+              color: 'rgba(255,255,255,0.6)',
+              fontWeight: 300,
+              fontSize: { xs: '0.92rem', md: '1rem' },
+            }}
+          >
             An exceptional service experience tailored to discerning clients
           </Typography>
         </Box>
@@ -77,52 +89,62 @@ const Partnership = () => {
                 <Box
                   sx={{
                     display: 'flex',
-                    gap: 16,
-                    flexDirection: 'row',
-                    alignItems: 'center',
+                    gap: { xs: 2, md: 4 },
+                    flexDirection: { xs: 'column', sm: 'row' },
+                    alignItems: { xs: 'flex-start', sm: 'center' },
                     justifyContent: 'space-between',
                     bgcolor: '#1a1a1a',
                     borderRadius: '24px',
-                    p: 4,
-                    height: '200px',
+                    p: { xs: 3, md: 4 },
+                    minHeight: { xs: 'auto', md: '200px' },
                     border: '1px solid rgba(255,255,255,0.05)',
                     transition: '0.3s',
                     '&:hover': {
                       borderColor: 'rgba(212, 141, 59, 0.4)',
-                      transform: 'translateY(-5px)'
-                    }
+                      transform: 'translateY(-5px)',
+                    },
                   }}
                 >
                   {/* Left Content */}
-                  <Box sx={{ maxWidth: '65%' }}>
-                    <Typography variant="subtitle1" sx={{ 
-                      color: theme.palette.secondary.main, 
-                      fontWeight: 700, 
-                      mb: 2,
-                      letterSpacing: '0.05em'
-                    }}>
+                  <Box sx={{ maxWidth: { xs: '100%', sm: '65%' } }}>
+                    <Typography
+                      variant="subtitle1"
+                      sx={{
+                        color: theme.palette.secondary.main,
+                        fontWeight: 700,
+                        mb: 2,
+                        letterSpacing: '0.05em',
+                        fontSize: { xs: '0.9rem', md: '1rem' },
+                      }}
+                    >
                       {item.title}
                     </Typography>
-                    <Typography variant="body1" sx={{ 
-                      color: 'rgba(255,255,255,0.7)', 
-                      lineHeight: 1.6,
-                      fontWeight: 300
-                    }}>
+                    <Typography
+                      variant="body1"
+                      sx={{
+                        color: 'rgba(255,255,255,0.7)',
+                        lineHeight: 1.6,
+                        fontWeight: 300,
+                        fontSize: { xs: '0.92rem', md: '1rem' },
+                      }}
+                    >
                       {item.desc}
                     </Typography>
                   </Box>
 
                   {/* Right Icon */}
-                  <Box 
-                    component="img" 
-                    src={item.icon.src} 
+                  <Box
+                    component="img"
+                    src={item.icon.src}
                     alt={item.title}
-                    sx={{ 
-                      height: '160px', 
-                      width: '200px',
+                    sx={{
+                      height: { xs: '120px', sm: '160px' },
+                      width: { xs: '100%', sm: '200px' },
+                      maxWidth: { xs: '100%', sm: '200px' },
+                      objectFit: 'cover',
                       filter: 'drop-shadow(0 10px 20px rgba(0,0,0,0.5))',
-                      borderRadius:'28px'
-                    }} 
+                      borderRadius: '28px',
+                    }}
                   />
                 </Box>
               </motion.div>

@@ -25,7 +25,7 @@ const Hero = () => {
       component="section"
       sx={{
         position: "relative",
-        height: "100vh",
+        height: { xs: "82vh", md: "100vh" },
         width: "100%",
         overflow: "hidden",
         backgroundColor: "#000",
@@ -107,9 +107,10 @@ const Hero = () => {
             sx={{
               fontWeight: 500,
               color: "white",
-              letterSpacing: "0.1em",
+              letterSpacing: { xs: "0.05em", md: "0.1em" },
               mb: 1,
-              fontSize: { xs: "2.5rem", md: "2.5rem" },
+              fontSize: { xs: "2.25rem", sm: "3rem", md: "4rem" },
+              lineHeight: 1.08,
             }}
           >
             Welcome to Your Dream Space
@@ -159,8 +160,8 @@ const Hero = () => {
         href="/contacts"
         style={{
           position: "absolute",
-          bottom: "40px",
-          right: "40px",
+          bottom: "24px",
+          right: "24px",
           zIndex: 3,
         }}
       >
