@@ -98,10 +98,10 @@ const Services = () => {
                   >
                     {service.icon}
                   </Box>
-                  <Typography variant="h5" sx={{ mb: 3, fontWeight: 600 }}>
+                  <Typography variant="h5" sx={{ mb: 3, fontWeight: 600 , color: '#fff'}}>
                     {service.title}
                   </Typography>
-                  <Typography sx={{ lineHeight: 1.6, opacity: 0.8 }}>
+                  <Typography sx={{ lineHeight: 1.6, opacity: 0.8 , color: '#fff' }}>
                     {service.description}
                   </Typography>
                 </CardContent>

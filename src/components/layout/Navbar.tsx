@@ -28,7 +28,10 @@ const navLinks = [
 const Navbar = () => {
   const isScrolled = useScrollTrigger(20);
   const theme = useTheme();
-  const isMobile = useMediaQuery(theme.breakpoints.down('md'));
+  const isMobile = useMediaQuery(theme.breakpoints.down('md'), {
+    defaultMatches: false,
+    noSsr: true,
+  });
   const [mobileOpen, setMobileOpen] = useState(false);
 
   useEffect(() => {
@@ -185,7 +188,7 @@ const Navbar = () => {
                 transition={{ duration: 0.35, ease: [0.43, 0.13, 0.23, 0.96] }}
                 style={{ overflow: 'hidden' }}
               >
-                {renderDesktopLinks()}dsfdf
+                {renderDesktopLinks()}
               </motion.div>
             )}
           </AnimatePresence>
