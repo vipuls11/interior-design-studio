@@ -4,6 +4,7 @@ import "./globals.css";
 import NavbarWrapper from "../src/components/layout/NavbarWrapper";
 import Footer from "../src/components/layout/Footer";
 import ProvidersWrapper from "./providers-wrapper";
+import CookieConsent from "@/components/common/CookieConsent";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -36,6 +37,7 @@ export default function RootLayout({
           <NavbarWrapper />
           {children}
           <Footer />
+          <CookieConsent />
         </ProvidersWrapper>
       </body>
     </html>

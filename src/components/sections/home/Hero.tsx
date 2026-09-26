@@ -138,6 +138,7 @@ const Hero = () => {
             href="/contacts"
             sx={{
               backgroundColor: "#d48d3b",
+              textDecoration: 'none',
               color: "white",
               padding: "12px 40px",
               borderRadius: "50px",

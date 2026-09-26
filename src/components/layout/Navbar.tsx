@@ -133,11 +133,11 @@ const Navbar = () => {
             <Image
               src={mindcraftBGLOGO}
               alt="Mindcraft Studio"
-              width={150}
+              width={200}
               priority
               style={{
                 width: '100%',
-                maxWidth: isMobile ? 120 : 150,
+                maxWidth: isMobile ? 150 : 250,
                 height: 'auto',
                 objectFit: 'contain',
                 cursor: 'pointer',
@@ -185,7 +185,7 @@ const Navbar = () => {
                 transition={{ duration: 0.35, ease: [0.43, 0.13, 0.23, 0.96] }}
                 style={{ overflow: 'hidden' }}
               >
-                {renderDesktopLinks()}
+                {renderDesktopLinks()}dsfdf
               </motion.div>
             )}
           </AnimatePresence>
