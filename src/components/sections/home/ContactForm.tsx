@@ -36,13 +36,13 @@ const ContactForm = () => {
             {/* LEFT SIDE: CEO IMAGE & WATERMARK */}
             <Grid size={{ xs: 12, md: 6 }} sx={{ position: 'relative', minHeight: '500px' }}>
               {/* Background Watermark */}
-              <Typography
+              {/* <Typography
                 sx={{
                   position: 'absolute',
                   top: '50%',
                   left: '10%',
                   transform: 'translateY(-50%)',
-                  fontSize: { xs: '12rem', md: '30rem' },
+                  fontSize: { xs: '12rem', md: '24rem' },
                   fontWeight: 900,
                   color: 'rgba(255,255,255,0.03)',
                   zIndex: 0,
@@ -51,8 +51,8 @@ const ContactForm = () => {
                   userSelect: 'none',
                 }}
               >
-                S54
-              </Typography>
+              CRAFT
+              </Typography> */}
 
               {/* CEO Photo */}
               <Box
