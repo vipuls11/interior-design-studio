@@ -19,8 +19,35 @@ const roboto = Roboto({
 });
 
 export const metadata: Metadata = {
-  title: "Mindcraft Studio",
-  description: "We create a Feeling of Being at Home: A place full of positive energy and Pride where you can always rely on our expertise to turn any space into something truly unique.",
+  metadataBase: new URL("https://mindcraftstudio.net"),
+  title: {
+    default: "Mindcraft Studio | Interior Design & Luxury Spaces",
+    template: "%s | Mindcraft Studio",
+  },
+  description:
+    "We create a Feeling of Being at Home: A place full of positive energy and Pride where you can always rely on our expertise to turn any space into something truly unique.",
+  keywords: [
+    "interior design",
+    "luxury interiors",
+    "home design",
+    "studio apartment design",
+    "residential interiors",
+    "commercial interior design",
+    "mindcraft studio",
+  ],
+  openGraph: {
+    title: "Mindcraft Studio",
+    description:
+      "Luxury interior design studio creating refined, functional, and elegant living spaces.",
+    type: "website",
+    locale: "en_US",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Mindcraft Studio",
+    description:
+      "Luxury interior design studio creating refined, functional, and elegant living spaces.",
+  },
 };
 
 export default function RootLayout({
