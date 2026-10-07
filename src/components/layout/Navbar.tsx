@@ -28,7 +28,10 @@ const navLinks = [
 const Navbar = () => {
   const isScrolled = useScrollTrigger(20);
   const theme = useTheme();
-  const isMobile = useMediaQuery(theme.breakpoints.down('md'));
+  const isMobile = useMediaQuery(theme.breakpoints.down('md'), {
+    defaultMatches: false,
+    noSsr: true,
+  });
   const [mobileOpen, setMobileOpen] = useState(false);
 
   useEffect(() => {
@@ -133,11 +136,11 @@ const Navbar = () => {
             <Image
               src={mindcraftBGLOGO}
               alt="Mindcraft Studio"
-              width={150}
+              width={200}
               priority
               style={{
                 width: '100%',
-                maxWidth: isMobile ? 120 : 150,
+                maxWidth: isMobile ? 150 : 250,
                 height: 'auto',
                 objectFit: 'contain',
                 cursor: 'pointer',

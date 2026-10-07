@@ -1,5 +1,6 @@
 "use client";
 import React from 'react';
+import Link from 'next/link';
 import { 
   Box, 
   Container, 
@@ -35,13 +36,13 @@ const ContactForm = () => {
             {/* LEFT SIDE: CEO IMAGE & WATERMARK */}
             <Grid size={{ xs: 12, md: 6 }} sx={{ position: 'relative', minHeight: '500px' }}>
               {/* Background Watermark */}
-              <Typography
+              {/* <Typography
                 sx={{
                   position: 'absolute',
                   top: '50%',
                   left: '10%',
                   transform: 'translateY(-50%)',
-                  fontSize: { xs: '12rem', md: '30rem' },
+                  fontSize: { xs: '12rem', md: '24rem' },
                   fontWeight: 900,
                   color: 'rgba(255,255,255,0.03)',
                   zIndex: 0,
@@ -50,8 +51,8 @@ const ContactForm = () => {
                   userSelect: 'none',
                 }}
               >
-                S54
-              </Typography>
+              CRAFT
+              </Typography> */}
 
               {/* CEO Photo */}
               <Box
@@ -129,7 +130,7 @@ const ContactForm = () => {
                   />
 
                   <Stack direction="row" spacing={2}>
-                    <Select
+                    {/* <Select
                       defaultValue="AE"
                       variant="standard"
                       sx={{ 
@@ -140,14 +141,12 @@ const ContactForm = () => {
                         '.MuiSvgIcon-root': { color: 'rgba(255,255,255,0.5)' }
                       }}
                     >
-                      <MenuItem value="AE">AE (+971)</MenuItem>
-                      <MenuItem value="RU">RU (+7)</MenuItem>
                       <MenuItem value="IN">IN (+91)</MenuItem>
-                    </Select>
+                    </Select> */}
                     <TextField
                       fullWidth
                       variant="standard"
-                      placeholder="50 123 4567"
+                      placeholder="+91 80800 81996"
                       sx={{
                         '& .MuiInput-root': {
                           '&:before': { borderBottomColor: 'rgba(255,255,255,0.2)' },
@@ -180,7 +179,10 @@ const ContactForm = () => {
                   </Button>
 
                   <Typography sx={{ fontSize: '10px', color: 'rgba(255,255,255,0.4)', textAlign: 'center' }}>
-                    By clicking the "Send" button, I accept the Privacy Policy terms <Box component="span" sx={{ textDecoration: 'underline', cursor: 'pointer' }}>privacy policy</Box>
+                    By clicking the "Send" button, I accept the Privacy Policy terms{' '}
+                    <Link href="/privacy-policy" style={{ color: 'inherit', textDecoration: 'underline', cursor: 'pointer' }}>
+                      privacy policy
+                    </Link>
                   </Typography>
                 </Stack>
               </motion.div>
