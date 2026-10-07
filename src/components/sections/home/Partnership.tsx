@@ -11,7 +11,7 @@ const services = [
     icon: LivingROOM,
   },
   {
-    title: "DINNING ROOM",
+    title: "DINING ROOM",
     desc: "Your trusted advisor within MINDCRAFT STUDIO *",
     icon: dinning,
   },
@@ -26,7 +26,7 @@ const services = [
     icon: interiors,
   },
   {
-    title: "DINNING SPACE",
+    title: "DINING SPACE",
     desc: "We will offer you the most favorable terms for your project",
     icon: dinning,
   },

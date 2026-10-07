@@ -97,7 +97,7 @@ const SocialRecognition = () => {
               fontFamily: 'sans-serif',
             }}
           >
-            <Counter from={0} to={2000000} />
+            <Counter from={0} to={0} />
           </Typography>
 
           <Typography

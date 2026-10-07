@@ -34,7 +34,7 @@ const Services = () => {
         backgroundColor: '#000',
         color: 'white',
         px: { xs: 2, sm: 3 },
-        pt: { xs: '100px', md: '130px' },
+        pt: { xs: '100px', md: '180px' },
         pb: { xs: 6, md: 10 },
       }}
     >

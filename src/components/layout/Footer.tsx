@@ -10,10 +10,9 @@ const navLinks = [
   { label: 'ABOUT US', href: '/about' },
   { label: 'CONTACTS', href: '/contacts' },
   { label: 'SERVICES', href: '/services' },
-  // { label: 'CAREER', href: '/career' },
-  // { label: 'BLOG', href: '/blog' },
-  // { label: 'PORTFOLIO', href: '/portfolio' },
-  // { label: 'COMMERCIALS', href: '/commercials' },
+  { label: 'PRIVACY POLICY', href: '/privacy-policy' },
+   { label: 'TERMS AND CONDITIONS', href: '/terms-and-conditions' },
+
 ];
 
 // const serviceLinks = [
@@ -172,7 +171,7 @@ const Footer = () => {
           <Typography sx={{ color: 'white', fontSize: '13px', borderBottom: '1px solid white', cursor: 'pointer' }}>
             En
           </Typography> */}
-          <Link component={NextLink} href="/privacy" sx={{ color: 'white', fontSize: '13px', textDecoration: 'none' }}>
+          <Link component={NextLink} href="/privacy-policy" sx={{ color: 'white', fontSize: '13px', textDecoration: 'none' }}>
             Privacy Policy
           </Link>
         </Stack>

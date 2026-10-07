@@ -19,7 +19,7 @@ const statsData = [
   { value: "Brainstorming", label: "Every great space begins with understanding you—your lifestyle, taste, and vision.", icon: BRAIN_STORMING },
   { value: "Concept Development", label: "Your ideas become the foundation of our concept.", icon: CONCEPT_DEV },
   {
-    value: "Designning",
+    value: "Designing",
     label: "We turn concepts into detailed visual experiences. With advanced design technology.",
     // sub: "*We continuously measure client loyalty index (NPS)",
     icon: DESIGN,

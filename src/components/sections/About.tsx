@@ -9,7 +9,7 @@ const About = () => {
         backgroundColor: '#000',
         color: 'white',
         px: { xs: 2, sm: 3 },
-        pt: { xs: '100px', md: '130px' },
+        pt: { xs: '100px', md: '180px' },
         pb: { xs: 6, md: 10 },
       }}
     >
@@ -27,7 +27,7 @@ const About = () => {
               lineHeight: 1.1,
             }}
           >
-            About §TUDIA 54®
+            About Mindcraft Studio
           </Typography>
           <Typography
             variant="h5"
@@ -52,7 +52,7 @@ const About = () => {
               Our Philosophys
             </Typography>
             <Typography sx={{ lineHeight: 1.8, opacity: 0.9 }}>
-            At §TUDIA 54®, we believe that great design is not just about aesthetics—it&apos;s about
+            At MINDCRAFT STUDIO, we believe that great design is not just about aesthetics—it&apos;s about
             creating spaces that enhance the way people live, work, and interact. Every project
             is approached with meticulous attention to detail, innovative thinking, and a deep
             understanding of our clients&apos; needs and aspirations.
