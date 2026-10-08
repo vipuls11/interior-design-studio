@@ -103,7 +103,7 @@ const Hero = () => {
           transition={{ duration: 1, ease: "easeOut" }}
         >
           <Typography
-            variant="h2"
+            variant="h1"
             sx={{
               fontWeight: 500,
               color: "white",
