@@ -7,7 +7,7 @@ const getRequiredEnv = (key: string) => {
 
   if (!value) {
     throw new Error(
-      `Missing environment variable: ${key}. Add it to your .env.local file or your hosting environment variables.`,
+      `Something went wrong.`,
     );
   }
 
@@ -15,10 +15,10 @@ const getRequiredEnv = (key: string) => {
 };
 
 const buildTransporter = () => {
-  const smtpHost = getRequiredEnv('NEXT_PUBLIC_SMTP_HOST');
-  const smtpPort = Number(getRequiredEnv('NEXT_PUBLIC_SMTP_PORT'));
-  const smtpUser = getRequiredEnv('NEXT_PUBLIC_SMTP_USER');
-  const smtpPass = getRequiredEnv('NEXT_PUBLIC_SMTP_PASS');
+  const smtpHost = getRequiredEnv('SMTP_HOST');
+  const smtpPort = Number(getRequiredEnv('SMTP_PORT'));
+  const smtpUser = getRequiredEnv('SMTP_USER');
+  const smtpPass = getRequiredEnv('SMTP_PASS');
 
   return nodemailer.createTransport({
     host: smtpHost,
@@ -57,9 +57,9 @@ const formatEmailHtml = (title: string, data: ContactFormPayload) => {
 };
 
 export const sendContactMail = async (payload: ContactFormPayload) => {
-  const siteName = process.env.NEXT_PUBLIC_SITE_NAME || 'Mindcraft Studio';
-  const senderEmail = process.env.NEXT_PUBLIC_SMTP_FROM || process.env.SMTP_USER || getRequiredEnv('NEXT_PUBLIC_SMTP_USER');
-  const adminEmail = process.env.NEXT_PUBLIC_CONTACT_ADMIN_EMAIL || senderEmail;
+  const siteName = process.env.SITE_NAME || 'Mindcraft Studio';
+  const senderEmail = process.env.SMTP_FROM || process.env.SMTP_USER || getRequiredEnv('SMTP_USER');
+  const adminEmail = process.env.CONTACT_ADMIN_EMAIL || senderEmail;
   const transporter = buildTransporter();
 
   const adminMail = {
