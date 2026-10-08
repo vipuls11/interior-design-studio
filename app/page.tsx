@@ -1,3 +1,4 @@
+import type { Metadata } from 'next';
 import { Box, Typography, Container, Button } from '@mui/material';
 import Link from 'next/link';
 import Hero from '@/components/sections/home/Hero';
@@ -9,6 +10,21 @@ import SocialRecognition from '@/components/sections/home/SocialRecognition';
 import ClientLogos from '@/components/sections/home/ClientLogos';
 import ProcessSteps from '@/components/sections/home/ProcessSteps';
 import ContactForm from '@/components/sections/home/ContactForm';
+
+export const metadata: Metadata = {
+  title: 'Luxury Interior Design Studio in Mumbai',
+  description:
+    'Mindcraft Studio creates luxury residential and commercial interiors in Mumbai with sleek design, functional layouts, and refined finishes that transform everyday spaces into inspiring homes.',
+  alternates: {
+    canonical: 'https://mindcraftstudio.net/',
+  },
+  openGraph: {
+    title: 'Luxury Interior Design Studio in Mumbai',
+    description:
+      'Luxury home interiors, villas, commercial spaces, and complete design solutions tailored for modern living.',
+    url: 'https://mindcraftstudio.net/',
+  },
+};
 
 export default function Home() {
   return (
