@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { GoogleAnalytics } from '@next/third-parties/google'
 import { Poppins, Roboto } from "next/font/google";
 import "./globals.css";
 import NavbarWrapper from "../src/components/layout/NavbarWrapper";
@@ -99,6 +100,7 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+   const gaId = process.env.GA_ID
   return (
     <html
       lang="en"
@@ -116,6 +118,7 @@ export default function RootLayout({
           <Footer />
           <CookieConsent />
         </ProvidersWrapper>
+         {gaId && <GoogleAnalytics gaId={gaId} />}
       </body>
     </html>
   );
